@@ -7,6 +7,9 @@ require 'open-uri' # makes http GET requests into 'open'
 require 'json' # for obvious reasons
 require 'open_uri_redirections' # allows browser redirects (my setting only allows from http to https)
 
+set :bind, '0.0.0.0'
+set :port, 8080
+
 get '/' do
   "Hi! To use our service, please send a http GET request from your app/software in the following format: '.../api/url/targetSite.com' and you will get the target site's page title and meta description"
 end
