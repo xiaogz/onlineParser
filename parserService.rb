@@ -14,9 +14,18 @@ get '/' do
   "Hi! To use our service, please send a http GET request from your app/software in the following format: '.../api/url/targetSite.com' and you will get the target site's page title and meta description"
 end
 
-get '/api/url/:urlInput' do
+get '/test/' do
+  'hi'
+end
+
+get %r{/test/(.+)} do
+  "hello"
+  "#{params[:captures]}"
+end
+
+get %r{/api/url/(.+)} do
   content_type :json
-  customLink = params[:urlInput]
+  customLink = params[:captures][0]
   siteData = Nokogiri::HTML(open("http://" + customLink, :allow_redirections => :safe))
   pageTitle = siteData.title
   pageDescription = siteData.at_xpath("//meta[@name='description']/@content")
