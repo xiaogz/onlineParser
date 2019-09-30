@@ -9,7 +9,7 @@ GEM
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     open_uri_redirections (0.2.1)
-    rack (2.0.4)
+    rack (2.0.6)
     rack-protection (2.0.1)
       rack
     rake (10.4.2)
@@ -31,7 +31,7 @@ DEPENDENCIES
   json (= 1.8.3)
   nokogiri (= 1.8.2)
   open_uri_redirections (= 0.2.1)
-  rack (= 2.0.4)
+  rack (= 2.0.6)
   rake (= 10.4.2)
   sinatra (= 2.0.1)
   thin (= 1.7.2)
