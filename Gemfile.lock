@@ -12,7 +12,7 @@ GEM
     rack (2.0.7)
     rack-protection (2.0.2)
       rack
-    rake (10.4.2)
+    rake (12.3.3)
     sinatra (2.0.2)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -32,7 +32,7 @@ DEPENDENCIES
   nokogiri (= 1.10.4)
   open_uri_redirections (= 0.2.1)
   rack (= 2.0.7)
-  rake (= 10.4.2)
+  rake (= 12.3.3)
   sinatra (= 2.0.2)
   thin (= 1.7.2)
 
