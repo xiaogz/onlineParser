@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'json', '1.8.3'
-gem 'nokogiri', '1.10.4'
+gem 'nokogiri', '1.10.8'
 gem 'open_uri_redirections', '0.2.1'
 gem 'rack', '2.0.7'
 gem 'rake', '12.3.3'
